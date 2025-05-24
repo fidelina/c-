@@ -1,0 +1,22 @@
+<Window x:Class="StringManipulationApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="String Manipulation" Height="350" Width="525">
+    <Grid>
+        <TextBox x:Name="InputTextBox" HorizontalAlignment="Left" Height="30" Margin="10,10,0,0"
+                 VerticalAlignment="Top" Width="480" />
+        <Button Content="Разделить на слова" HorizontalAlignment="Left" VerticalAlignment="Top" Width="150" Height="30"
+                Margin="10,50,0,0" Click="SplitWordsButton_Click" />
+
+        <ListBox x:Name="WordsListBox" HorizontalAlignment="Left" Height="150" Margin="10,90,0,0"
+                 VerticalAlignment="Top" Width="480" />
+
+        <TextBox x:Name="ReversedTextBox" HorizontalAlignment="Left" Height="30" Margin="10,250,0,0"
+                 VerticalAlignment="Top" Width="480" />
+        <Button Content="Переставить слова" HorizontalAlignment="Left" VerticalAlignment="Top" Width="150" Height="30"
+                Margin="10,290,0,0" Click="ReverseWordsButton_Click" />
+
+        <Label x:Name="ReversedLabel" HorizontalAlignment="Left" VerticalAlignment="Top" Height="30"
+               Margin="170,290,0,0" Width="320" />
+    </Grid>
+</Window>
